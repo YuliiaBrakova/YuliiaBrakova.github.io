@@ -131,6 +131,7 @@ body{
 	height: 40px;
 	background: rgba(202,219,237,0.25);
 	border: 1px solid #2c71b8;
+color: #2c71b8;
 }
 
 .search button{
@@ -144,7 +145,7 @@ body{
 
 
 }
-.search input::-webkit-input-placeholder{
+.search input::placeholder{
  color: #2c71b8;
  font-size: 15px;
  padding-left: 18px;
