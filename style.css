@@ -16,7 +16,8 @@ body{
 	float: left;
 }
 
-.row:after, .menu:after, .submenu:after, .sidebar:after, .product:after{
+.row:after, .menu:after, .submenu:after, .sidebar:after,
+ .product:after, .list:after{
 	content: "";
 	display: table;
 	clear: both;
@@ -39,9 +40,7 @@ body{
 .col-md-9{
 	width: 75%;
 }
-.col-md-4{
-	width: 33.333%;
-}
+
 
 .logo img{
 	
@@ -219,6 +218,7 @@ body{
 	color: rgb(130,164,207, 0.75);
 	font-weight: 300;
 	padding-top: 30px;
+	float: left;
 }
 
 .list a:last-child{
@@ -236,20 +236,23 @@ body{
 	float: left;
 	border: 1px solid #fff; 
 	position: relative;
-	margin-left: 600px;
-	margin-top: -35px;
+	margin-left: 90px;
+	margin-top: 65px;
+
+	
 	
 }
 
 .sort-menu a{
 	text-decoration: none;
 	display: block;
-	height: 30px;
-	line-height: 30px;
+	height: 38px;
+	line-height: 38px;
 	color: #fff;
 	background-color: #2c71b8;
 	font-weight: 300;
 	font-size: 18px;
+	text-align: center;
 }
 .c:after {
 	
@@ -264,19 +267,20 @@ body{
 	width: 270px;
 	position: absolute;
 	border: 1px solid #fff;
-	background: #2c71b8; 
+	background: #2c71b8;
+	z-index: 1000; 
 }
 .sub-sort-menu a{
 	text-decoration: none;
 	display: block;
-	height: 30px;
-	line-height: 30px;
+	height: 38px;
+	line-height: 38px;
 	color: #fff;
 	background-color: #2c71b8;
 	font-weight: 300;
 	font-size: 18px;
-
-	
+	text-align: left;
+	padding-left: 28px;
 }
 .sub-sort-menu a:hover {
 	background-color: #fff;
@@ -303,7 +307,7 @@ body{
 	display: block;
 	border: 1px solid white;
 	background-image: url(image/fon.jpg);
-	z-index: 0;
+	
 }
 .product-img img{
 	background-color:  rgba(255,255,255,0.75);
@@ -312,27 +316,7 @@ body{
 	height: 179px;
 	width: 100%;
 }
-/*.wishlist-btn,  {
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	border: 1px solid  #2c71b8;
-	background-color:  rgba(255,255,255,0.75);
-	background-image: url(imagr/10.png);
-	float: right;
-	
 
-}
-.quikviev-btn{
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	border: 1px solid  #2c71b8;
-	background-color:  rgba(255,255,255,0.75);
-	background-image: url(imagr/11.png);
-	float: right;
-
-}*/
 
 h3{
 	padding-top: 14px;
@@ -362,7 +346,7 @@ b{
 	outline: 0;
 	vertical-align: top;
 }
-.button{
+.button,.button2{
 	text-decoration: none;
 	display: inline-block;
 	width: 211px;
@@ -377,4 +361,17 @@ b{
 	text-align: center;
 	margin-left: 30px;
 	margin-top: 15px;
+}
+.button2{
+	background-color:  rgba(86,141,198,0.25);
+	/*background-image: url(image/12.png);*/
+}
+
+.name-h h4{
+	font-size: 38px;
+	font-weight: 300;
+	color: white;
+	padding-top: 40px;
+	padding-left: 335px;
+
 }
