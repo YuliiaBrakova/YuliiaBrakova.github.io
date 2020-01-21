@@ -16,8 +16,8 @@ body{
 	float: left;
 }
 
-.row:after, .menu:after, .submenu:after, .sidebar:after,
- .product:after,  .h1:after, .list:after, .select:after{
+.row:after, .menu:after, .submenu:after, .sidebar:after,.select:after,
+.h1:after, .list:after, .product:after    {
 	content: "";
 	display: table;
 	clear: both;
@@ -215,11 +215,12 @@ body{
 
 
 /*breadcrumb*/
-
+.list{
+	margin-top: 28px;
+}
 .list li{
 display: block;
-	margin-top: 30px;
-	margin-left: 15px;
+	
 	float: left;
 }
 
@@ -250,7 +251,7 @@ display: block;
 	font-weight: 700;
 	color: white;
 	float: left;
-	margin: 30px 50px 0 30px;
+	margin-top: 30px ;
 	
 }
 .select{
