@@ -283,7 +283,7 @@ display: block;
 	margin-top: 50px;
 	float: left;
 	width: 269px;
-	height: 650px;
+	height: 680px;
 	border: 1px solid white;
 	background-color:  rgba(44,113,184,0.75);
 	color: white;
@@ -293,14 +293,15 @@ display: block;
 .product-img{
 	display: block;
 	border-bottom: 1px solid white;	
-
+	background-color:  rgba(255,255,255,0.75);
 }
 .product-img img{
-	background-color:  rgba(255,255,255,0.75);
+	
 	position: relative;
 	display: block;
 	height: 179px;
 	width: 100%;
+	text-align: center;
 }
 .square{
 	background-image: url(image/10.png);
@@ -327,36 +328,70 @@ display: block;
 	border:  1px solid #2c71b8;
 }
 
+.product-list{
+	margin: 15px 15px 30px 15px;
+	height: 100%;
+}
 .h2{
-	padding-top: 14px;
-	padding-left: 14px;
-	padding-bottom: 10px;
+	
 	font-weight: 700;
-	font-size: 30px; 
+	font-size: 30px;
+	text-align: center; 
 }
 .h3{
-	padding-top: 14px;
-	padding-left: 14px;
-	padding-bottom: 10px;
+	top: 20px;
 	font-weight: 700;
 	font-size: 21px; 
 }
 p{
-	padding-top: 14px;
-	padding-left: 14px;
-	padding-bottom: 10px;
+	margin-top: 15px;
 	font-weight: 300;
 	font-size: 21px; 
 }
 
 .price{
 	text-align: center;
-	padding-top: 80px;
-	padding-left: 60px;
-	padding-bottom: 10px;
+	margin-left: 33px;
 	font-size: 48px;
+font-weight: 700;
 }
  .sup{
 	font-size: 24px;
 	vertical-align: super;
 }
+
+
+.btn-primary{
+	width: 210px;
+	height: 50px;
+	margin-top: 16px;
+	text-align: center;
+	margin-left: 15px;
+	background-color: #2c71b8;
+	border: 1px solid white;
+	font-weight: 700;
+	font-size: 21px;
+	color: white 
+}
+.btn-secondary{
+	width: 210px;
+	height: 50px;
+	margin-top: 16px;
+	text-align: center;
+	margin-left: 15px;
+	background-color: #2c71b8;
+	border: 1px solid white;
+	font-weight: 700;
+	font-size: 21px;
+	color: white 
+/*	background-image: url(image/12.png);*/
+}
+.btn-primary:hover, .btn-secondary:hover{
+	background-color: rgba(86,141,198,0.85);
+}
+/*.btn-secondary:before {
+content: "\f07a"; 
+font-family: FontAwesome;
+color: #fff;
+margin-right: 175px; 
+}*/
