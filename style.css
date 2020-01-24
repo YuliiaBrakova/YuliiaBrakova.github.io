@@ -5,28 +5,36 @@
 body{
 	font-family: 'Roboto', sans-serif;
 	background-image: url(image/patt.png);
-}
 
-.container{
-	width: 1170px;
-	margin: 0 auto;
-}
-
-[class*="col-"]{
-	float: left;
-}
-
-.row:after, .menu:after, .submenu:after, .sidebar:after,.select:after,
-.h1:after, .list:after, .product:after    {
-	content: "";
-	display: table;
-	clear: both;
 }
 
 .header{
 	padding: 25px 0;
 	background-color: rgba(255,255,255,0.75); 
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border-bottom: 1px solid white;
+}
 
+.main{
+	width: 100%;
+	padding: 30px 0;
+	flex-grow: 1;
+	justify-content: space-around;
+
+}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+.row{
+	display: flex;
+flex-wrap: wrap;
+}
+
+.footer{
+	width: 100%;
 }
 .col-md-3{
 
@@ -47,15 +55,22 @@ body{
 	width: 66.666%;
 }
 
-
-.logo img{
-	
-	margin-top: 8px;
+.logo{
+	display: flex;
+	flex: none;
+	/*width: 300px;*/
 }
 
+.logo img{
+	 	
+	margin-top: 8px;
+}
+.menu {
+	/*width: 570px;*/
+	display: flex;
+	flex-wrap: wrap;
 
-/*ГОРИЗОНТАЛЬНОЕ ВЫПАДАЮЩЕЕ МЕНЮ*/
-
+}
 .nav ul ul{
 	display: none;
 }
@@ -65,7 +80,8 @@ body{
 }
 .menu > li{
 	width: 25%;
-	float: left;
+	display: inline-block;
+	justify-content: center;
 	border-left: 1px solid #2c71b8; 
 	position: relative;
 }
@@ -97,11 +113,12 @@ body{
 }
 
 .submenu {
-	width: 294px;
+	width: 293px;
 	position: absolute;
 	border-left: 1px solid #2c71b8; 
 	background: #2c71b8; 
 	left: -1px;
+	
 }
 .submenu a{
 	text-decoration: none;
@@ -127,13 +144,17 @@ body{
 	color:#fff ;
 
 }
+.search{
+	/*width: 300px;*/
+	display: flex;
+	flex-wrap: wrap;
 
-/*ПОИСКОВОЕ ПОЛЕ*/
+}
 
 .search form {
 	display: inline-block;
 	position: relative;
-	margin-left: 30px;
+	margin-left: 25px;
 	margin-top: 6px;
 	
 }
@@ -197,32 +218,32 @@ body{
 	bottom: 30px;
 }
 
-/*Slide*/
-
 .slide{
 	height: 400px;
 	width: 100%;
+	
 }
-/* Main */
 
 .sidebar{
-	float: left;
+	display: flex;
+	flex-wrap: wrap;
 	width: 270px;
 	height: 850px;
 	background-color: rgba(255,255,255,0.20);  
 	border-right: 1px solid white;
 }
 
-
-/*breadcrumb*/
 .list{
-	margin-top: 28px;
-	margin-left: 2px;
+	display: flex;
+	flex-wrap: wrap;
+
 }
+
 .list li{
 display: block;
+	margin-top: 28px;
+	right: -5px;
 	
-	float: left;
 }
 
 .list li::before{
@@ -231,6 +252,9 @@ display: block;
 	margin-left: 8px;
 	color: rgb(130,164,207, 0.75);
 }
+/*.list li::last-child::before{
+	text-decoration: none;
+}*/
 .list li:first-child::before{
 	content: '';
 
@@ -238,7 +262,7 @@ display: block;
 }
 .list a{
 	text-decoration: none;
-	font-size: : 14px;
+	font-size:  14px;
 	color: rgb(130,164,207, 0.75);
 	font-weight: 300;
 
@@ -251,9 +275,10 @@ display: block;
 	font-size: 48px;
 	font-weight: 700;
 	color: white;
-	float: left;
+	display: flex;
+	flex-wrap: wrap;
 	margin-top: 30px ;
-	margin-left: 18px;
+	
 	
 }
 
@@ -276,7 +301,7 @@ appearance: none;
 -moz-appearance: none;
 -webkit-appearance: none;
 margin-top: 35px;
-margin-left: 27px;
+
 }
 select{
 	text-rendering: auto;
@@ -297,10 +322,6 @@ select{
 	color: #2c71b8;
 
 }
-
-
-
-
 .option{
 	display: block;
 	white-space: pre;
@@ -312,23 +333,24 @@ select{
 .product{
 	display: block;
 	margin-top: 50px;
-	float: left;
+	display: flex;
+	flex-wrap: wrap;
 	width: 269px;
 	height: 680px;
 	border: 1px solid white;
 	background-color:  rgba(44,113,184,0.75);
 	color: white;
-	margin: 50px 30px 30px 30px;
+	
 	
 }
 .product-img{
+	position: relative;
 	display: block;
 	border-bottom: 1px solid white;	
 	background-color:  rgba(255,255,255,0.75);
 }
 .product-img img{
 	
-	position: relative;
 	display: block;
 	height: 179px;
 	width: 100%;
@@ -342,9 +364,9 @@ select{
 	height: 30px;
 	width: 30px;
 	left: 230px;
-	top: -170px;
+	top: 10px;
 	text-align: center;
-	position: relative;
+	position: absolute;
 	border:  1px solid #2c71b8;
 }
 .heart{
@@ -354,12 +376,13 @@ select{
 	display: inline-block;
 	height: 30px;
 	width: 30px;
-	left: 195px;
-	top: -130px;
+	left: 230px;
+	top: 50px;
 	text-align: center;
-	position: relative;
+	position: absolute;
 	border:  1px solid #2c71b8;
 }
+  
   
 .square:hover{
 background-image: url(image/10.1.png);
@@ -442,10 +465,3 @@ font-weight: 700;
 .btn-primary:hover, .btn-secondary:hover{
 	background-color: rgba(86,141,198,0.75);
 }
-
-/*.btn-secondary:before {
-content: "\f07a"; 
-font-family: FontAwesome;
-color: #fff;
-margin-right: 175px; 
-}*/
