@@ -35,6 +35,11 @@ flex-wrap: wrap;
 
 .footer{
 	width: 100%;
+	background-color: rgba(255,255,255,0.75); 
+	padding: 40px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .col-md-3{
 
@@ -464,4 +469,9 @@ font-weight: 700;
 }
 .btn-primary:hover, .btn-secondary:hover{
 	background-color: rgba(86,141,198,0.75);
+}
+.copy{
+	color: #2c71b8;
+	font-size: 21px;
+	font-weight: 300;
 }
