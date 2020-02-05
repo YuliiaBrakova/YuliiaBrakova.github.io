@@ -12,11 +12,22 @@ for (let i=0; i<addToCartButtons.length; i++) {
 		 productCountEl.textContent = +productCountEl.textContent + 1;
 	})
 }
-
+// slick slider
 $('.slick').slick({
 	dots:true,
 })
-// heart
-// let addToWishList = document.querySelectorAll(".heart");
+// changed like
+let addToWishList = document.querySelectorAll(".heart");
+console.log(addToWishList)
+for (let i=0; i<addToWishList.length; i++) {
+	addToWishList[i].addEventListener("click",function(){
+		if (addToWishList[i].classList.contains('liked')) {
+			addToWishList[i].classList.remove('liked')
+		} else{
+			addToWishList[i].classList.add('liked')
+		}
+	})
+}
 
-// if(addToWishList.classList.contains == "heart" )
+
+

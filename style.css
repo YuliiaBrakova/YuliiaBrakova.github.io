@@ -494,7 +494,8 @@ background-image: url(image/10.1.png);
 	 background-repeat: no-repeat;
 
 }
-.heart:hover{
+	
+.heart:hover, .liked{
 	background-image: url(image/11.1.png);
 	background-color:#2c71b8; 
 	 background-repeat: no-repeat;	
