@@ -29,5 +29,38 @@ for (let i=0; i<addToWishList.length; i++) {
 	})
 }
 
+// product-quantity
+function disabledDecrement(count){
+	if(count<=1){
+ 			decrementButton.disabled = true;
+ 		} else if(count>=10) {
+ 			incrementButton.disabled = true;
+ 		}
 
+ 		else{
+ 			decrementButton.disabled = false;
+ 			incrementButton.disabled = false;
+ 		}
 
+}
+
+let decrementButton = document.querySelectorAll(".decrement-button")[0];
+let incrementButton = document.querySelectorAll(".increment-button")[0];
+let productQuantityInput = document.querySelectorAll(".product-quantity-input")[0];
+
+ incrementButton.addEventListener("click",function(){
+ 		let currentValue = +productQuantityInput.value;
+ 		let nextValue = currentValue + 1;
+ 		productQuantityInput.value = nextValue;
+
+ 		disabledDecrement(nextValue)
+
+ })
+
+ decrementButton.addEventListener("click",function(){
+ 		let currentValue = +productQuantityInput.value;
+ 		let nextValue = currentValue - 1;
+ 		productQuantityInput.value = nextValue;
+
+ 		disabledDecrement(nextValue)
+ })
