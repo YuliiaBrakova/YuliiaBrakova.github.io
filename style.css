@@ -272,6 +272,11 @@ flex-wrap: wrap;
    
      color: white; 
 }
+.slick-dots li.slick-active button:hover{
+	background-color: white;
+	width: 20px;
+    height: 20px;
+} 
 .sidebar{
 	
 	width: 270px;
