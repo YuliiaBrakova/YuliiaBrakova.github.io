@@ -516,6 +516,13 @@ background-image: url(image/10.1.png);
 	font-weight: 700;
 	font-size: 21px; 
 }
+h5{
+	font-weight: 100;
+	font-size: 40px;
+	text-indent:320px;
+	color: white; 
+	margin: 20px 0;
+}
 p{
 	margin-top: 15px;
 	font-weight: 300;
@@ -575,4 +582,24 @@ font-weight: 700;
 	font-size: 21px;
 	font-weight: 300;
 }
+.product-quantity{
+	padding-top: 10px;
+	padding-left: 80px;
+}
 
+.product-quantity-input{
+	border: none;
+	text-align: center;
+	width: 32px;
+	font-size: 16px;
+	color: white;
+	font-weight: 300;
+	background-color:   #2c71b8;
+}
+.increment-button , .decrement-button{
+	width: 20px;
+	height: 20px;
+	border-radius: 2px;
+	border: none;
+	text-align: center;
+}
