@@ -44,9 +44,9 @@ function disabledDecrement(count){
 
 }
 
-let decrementButton = document.querySelectorAll(".decrement-button")[0,1,2,3,4,5,6,7,8];
-let incrementButton = document.querySelectorAll(".increment-button")[0,1,2,3,4,5,6,7,8;
-let productQuantityInput = document.querySelectorAll(".product-quantity-input")[0,1,2,3,4,5,6,7,8];
+let decrementButton = document.querySelectorAll(".decrement-button")[8];
+let incrementButton = document.querySelectorAll(".increment-button")[8];
+let productQuantityInput = document.querySelectorAll(".product-quantity-input")[8];
 
  incrementButton.addEventListener("click",function(){
  		let currentValue = +productQuantityInput.value;
