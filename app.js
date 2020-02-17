@@ -48,6 +48,7 @@ let decrementButton = document.querySelectorAll(".decrement-button")[8];
 let incrementButton = document.querySelectorAll(".increment-button")[8];
 let productQuantityInput = document.querySelectorAll(".product-quantity-input")[8];
 
+
  incrementButton.addEventListener("click",function(){
  		let currentValue = +productQuantityInput.value;
  		let nextValue = currentValue + 1;
@@ -64,3 +65,9 @@ let productQuantityInput = document.querySelectorAll(".product-quantity-input")[
 
  		disabledDecrement(nextValue)
  })
+
+
+$(".select").css("background-color", "#2c71b8");
+$(".select").css("color", "white");
+$(".select option").css("background-color", "#2c71b8");
+$(".select option").css("color", "white");
